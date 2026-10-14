@@ -22,66 +22,106 @@
 </header>
 
 <main id="main">
-<section class="hero">
+<section class="hero" aria-roledescription="carousel" aria-label="Wyvern systems in use">
+  <div class="slides">
+    <div class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 4"><img src="img/hero-1.jpg" alt="Precision rotary table surface"></div>
+    <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 4"><img src="img/hero-2.jpg" alt="Large turbine component being measured on an iMAP system" loading="lazy"></div>
+    <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 4"><img src="img/hero-3.jpg" alt="LabStandard precision rotary table with sensor" loading="lazy"></div>
+    <div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 4"><img src="img/hero-4.jpg" alt="Operator placing a turbine part on an RPI rotary table" loading="lazy"></div>
+  </div>
   <div class="wrap hero-inner">
     <p class="eyebrow">Productivity Through Quality™</p>
     <h1>Your Partner for Process Quality Control</h1>
     <p class="lede">Precise. Robust. Versatile. Industrial measurement and positioning systems for the Advanced Engineering sector.</p>
     <div class="actions"><a class="btn" href="#products">Explore Products</a><a class="btn btn-ghost" href="#contact">Request a Quote</a></div>
   </div>
+  <div class="hero-ctrl wrap">
+    <button class="pause" aria-pressed="false"><span class="sr">Pause slideshow</span><span aria-hidden="true">❚❚</span></button>
+    <div class="dots" role="group" aria-label="Choose slide">
+      <button aria-label="Slide 1" aria-current="true"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button><button aria-label="Slide 4"></button>
+    </div>
+  </div>
 </section>
 
-<section class="intro wrap" id="about">
-  <div>
+<section class="intro" id="about">
+  <div class="wrap center">
     <p class="eyebrow dark">Who we are</p>
     <h2>Metrology systems that deliver results</h2>
-  </div>
-  <div>
     <p class="big">Wyvern is a specialist supplier of industrial measurement and positioning systems to the Advanced Engineering sector.</p>
     <p>We provide measurement systems for cleanliness testing, the inspection of circular and angular geometry along with systems for metrology integration. We also provide training, service, repair, and calibration services for these systems.</p>
   </div>
 </section>
 
+<section class="areas wrap" aria-labelledby="areas-h">
+  <h2 id="areas-h" class="sr">Product areas</h2>
+  <div class="bento">
+    <a class="tile t-big" href="#"><img src="img/p-lab.jpg" alt="" loading="lazy"><div class="cap"><h3>Cleanliness Testing</h3><p>Technical cleanliness is a critical element of manufacturing quality and process control — move beyond final inspection toward proactive contamination prevention.</p></div></a>
+    <a class="tile" href="#"><img src="img/p-quadrant.jpg" alt="" loading="lazy"><div class="cap"><h3>CMM &amp; Metrology</h3><p>Additional axes for metrology integration — CMMs, measurement arms and laser trackers.</p></div></a>
+    <a class="tile" href="#"><img src="img/p-geoordinate.jpg" alt="" loading="lazy"><div class="cap"><h3>Positioning &amp; Indexing</h3><p>Precision shop floor and laboratory positioning and indexing.</p></div></a>
+    <a class="tile t-wide" href="#"><img src="img/p-imap.jpg" alt="" loading="lazy"><div class="cap"><h3>Circular Geometry</h3><p>Precision shop floor circular geometry inspection systems — runout, roundness, eccentricity, circular flatness and parallelism.</p></div></a>
+    <a class="tile t-full" href="#rental"><img src="img/hero-4.jpg" alt="" loading="lazy"><div class="cap"><h3>Equipment Rental</h3><p>Flexible rental options designed to fit your plans.</p></div></a>
+  </div>
+</section>
+
 <section class="products" id="products">
   <div class="wrap">
-    <p class="eyebrow dark">What we do</p>
-    <h2>Industry leading technologies that improve process quality</h2>
-    <div class="cards">
-      <a class="card" href="#"><img src="img/particle64.png" alt=""><h3>Cleanliness Testing</h3><p>Technical cleanliness is a critical element of manufacturing quality and process control — move beyond final inspection toward proactive contamination prevention.</p><span class="more">Learn more →</span></a>
-      <a class="card" href="#"><img src="img/998531-coordinates-function-grid-.png" alt=""><h3>CMM &amp; Metrology</h3><p>The Quadrant range of rotary tables improves measurement speed, reduces measurement uncertainty and increases CMM capacity.</p><span class="more">Learn more →</span></a>
-      <a class="card" href="#"><img src="img/rotary.png" alt=""><h3>Positioning &amp; Indexing</h3><p>RPI rotary products: thousands of installations worldwide, underpinned by 75 years of engineering heritage.</p><span class="more">Learn more →</span></a>
-      <a class="card" href="#"><img src="img/64-tactile.png" alt=""><h3>Circular Geometry</h3><p>iMap, GeoInspec and TruMotion systems for the inspection of circular and angular geometry — from aero engines to the shop floor.</p><span class="more">Learn more →</span></a>
-      <a class="card card-accent" href="#rental"><img src="img/light.png" alt=""><h3>Equipment Rental</h3><p>Add measurement capacity, test a new process or work on a short project with flexible rental options.</p><span class="more">See rental options →</span></a>
-      <div class="card card-plain"><h3>Training, Service &amp; Calibration</h3><p>We also provide training, service, repair, and calibration services for the systems we supply.</p></div>
+    <div class="head-row">
+      <div><p class="eyebrow dark">Our products</p><h2>Industry leading technologies that improve process quality</h2></div>
+      <p>Rotary products from <strong>RPI</strong>: “With thousands of installations worldwide, you can be sure of performance, reliability and quality. 75 years of engineering heritage underpin their design.”</p>
     </div>
+    <ul class="pgrid">
+      <li class="pcard"><img src="img/p-imap.jpg" alt="iMAP system measuring a turbine component" loading="lazy"><div><span class="cat">Circular Geometry</span><h3>iMAP</h3><p>Aircraft engines run more efficiently and are built and maintained more quickly when they are measured using iMAP. Used extensively in steam and gas turbine manufacture and MRO.</p></div></li>
+      <li class="pcard"><img src="img/p-geospin.jpg" alt="GeoSpin system rendering" loading="lazy"><div><span class="cat">Circular Geometry</span><h3>GeoSpin</h3><p>Quickly and accurately measures circular and rotating components on the shop floor.</p></div></li>
+      <li class="pcard pcard-text"><div><span class="cat">Circular Geometry</span><h3>GeoInspec</h3><p>Measures features such as runout, roundness, eccentricity, circular flatness and parallelism quickly, accurately and easily on the shop floor.</p></div></li>
+      <li class="pcard pcard-text"><div><span class="cat">Circular Geometry</span><h3>TruMotion</h3><p>Precise shopfloor TIR inspection capabilities for machine shops.</p></div></li>
+      <li class="pcard"><img src="img/p-quadrant.jpg" alt="Quadrant rotary table on a CMM" loading="lazy"><div><span class="cat">CMM &amp; Metrology</span><h3>Quadrant Range</h3><p>Rotary tables which improve measurement speed, reduce measurement uncertainty and increase CMM capacity. Includes Slimline2, DualPurpose2, QuadProfile, QuadMatic, QuadUniversal, QuadScan and QuadScanDUO.</p></div></li>
+      <li class="pcard pcard-text"><div><span class="cat">CMM &amp; Metrology</span><h3>OctoScan</h3><p>Universal 8th axis for portable CMMs.</p></div></li>
+      <li class="pcard"><img src="img/hero-3.jpg" alt="LabStandard precision rotary table" loading="lazy"><div><span class="cat">Positioning &amp; Indexing</span><h3>LabStandard &amp; LabStandard DUO</h3><p>Sensor testing and positioning, and opportunities to increase performance and quality on turned parts. Also available: LabStandard Air.</p></div></li>
+      <li class="pcard"><img src="img/p-geoordinate.jpg" alt="GeoOrdinate application" loading="lazy"><div><span class="cat">Positioning &amp; Indexing</span><h3>GeoOrdinate</h3><p>Used extensively in research and scientific environments.</p></div></li>
+      <li class="pcard"><img src="img/p-i72.jpg" alt="i72 Diamond Standard indexing table" loading="lazy"><div><span class="cat">Positioning &amp; Indexing</span><h3>i72 Diamond Standard</h3><p>Ultra high performance for calibration laboratories and research.</p></div></li>
+      <li class="pcard"><img src="img/p-lab.jpg" alt="Technical cleanliness laboratory" loading="lazy"><div><span class="cat">Cleanliness Testing</span><h3>Total Lab</h3><p>A turnkey technical cleanliness setup to meet your exact needs.</p></div></li>
+      <li class="pcard pcard-text"><div><span class="cat">Cleanliness Testing</span><h3>ParticleView 5</h3><p>Fast, accurate and comprehensive particle analysis.</p></div></li>
+      <li class="pcard pcard-text"><div><span class="cat">Cleanliness Testing</span><h3>Fluoscan · ConSpector · Rinsing Sink</h3><p>Cleanliness inspection of three-dimensional part surfaces, optical checking of cleaning bath contamination, and an easy to use rinsing sink for larger parts.</p></div></li>
+    </ul>
+    <p class="note">Plus training, service, repair and calibration for the systems we supply.</p>
   </div>
 </section>
 
-<section class="industries wrap" id="industries">
-  <div>
-    <p class="eyebrow dark">Who we do it for</p>
-    <h2>Trusted across Advanced Engineering</h2>
-    <p>We supply products and services for many companies in the Advanced Engineering sector.</p>
+<section class="band">
+  <img src="img/hero-1.jpg" alt="" loading="lazy">
+  <div class="wrap band-inner">
+    <p class="eyebrow">What makes us tick</p>
+    <h2>We love it when our systems improve people’s productivity, quality and efficiency.</h2>
+    <p>We’re also big believers in making metrology and all matters measurement as accessible as possible.</p>
+    <a class="btn" href="#about">About Us</a>
   </div>
-  <ul class="chips">
-    <li>Aerospace &amp; MRO</li><li>Energy</li><li>Automotive</li><li>Space &amp; Defense</li><li>Metrology OEMs</li><li>Calibration Laboratories</li><li>Research Facilities</li><li>Machine Shops</li>
+</section>
+
+<section class="industries" id="industries">
+  <div class="wrap">
+    <div class="center"><p class="eyebrow dark">Who we do it for</p><h2>Industries we serve</h2>
+    <p>Our innovative, world leading metrology and positioning solutions help improve product quality, productivity and efficiency in a wide variety of industries.</p></div>
+    <ul class="igrid">
+      <li class="tile"><img src="img/i-aero.jpg" alt="" loading="lazy"><div class="cap"><h3>Aero Engine</h3><p>iMAP and GeoInspec</p></div></li>
+      <li class="tile"><img src="img/i-auto.jpg" alt="" loading="lazy"><div class="cap"><h3>Automotive</h3><p>Cleanliness, Quadrant, LabStandard</p></div></li>
+      <li class="tile"><img src="img/i-energy.jpg" alt="" loading="lazy"><div class="cap"><h3>Energy</h3><p>Steam and gas turbine OEM, Tier 1 and MRO</p></div></li>
+      <li class="tile"><img src="img/i-cmm.jpg" alt="" loading="lazy"><div class="cap"><h3>CMM &amp; Metrology</h3><p>CMM OEMs, end users and service companies</p></div></li>
+      <li class="tile"><img src="img/i-space.jpg" alt="" loading="lazy"><div class="cap"><h3>Defense &amp; Space</h3><p>LabStandard and LabStandard DUO</p></div></li>
+      <li class="tile"><img src="img/i-shop.jpg" alt="" loading="lazy"><div class="cap"><h3>Machine Shops</h3><p>TruMotion shopfloor TIR inspection</p></div></li>
+      <li class="tile"><img src="img/i-research.jpg" alt="" loading="lazy"><div class="cap"><h3>Research &amp; Laboratory</h3><p>LabStandard, GeoOrdinate, i72 Diamond Standard</p></div></li>
+      <li class="tile"><img src="img/i-ev.jpg" alt="" loading="lazy"><div class="cap"><h3>EV Batteries</h3><p>Clean, residue-free hairpins</p></div></li>
+      <li class="tile"><img src="img/i-plant.jpg" alt="" loading="lazy"><div class="cap"><h3>Heavy Machinery &amp; Plant</h3><p>ParticleView cleanliness systems</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="clients wrap" aria-labelledby="cl-h">
+  <p class="ph-tag">PLACEHOLDER — content needed from Wyvern</p>
+  <h2 id="cl-h">Client logos</h2>
+  <ul class="logos">
+    <li>Client logo — provided by Wyvern</li><li>Client logo — provided by Wyvern</li><li>Client logo — provided by Wyvern</li><li>Client logo — provided by Wyvern</li><li>Client logo — provided by Wyvern</li><li>Client logo — provided by Wyvern</li>
   </ul>
-</section>
-
-<section class="ethos">
-  <div class="wrap ethos-inner">
-    <div>
-      <p class="eyebrow">What makes us tick</p>
-      <h2>We love it when our systems improve people’s productivity, quality and efficiency.</h2>
-      <p>We’re also big believers in making metrology and all matters measurement as accessible as possible. That’s why we always strive to express things as clearly as we can and be as approachable as possible.</p>
-      <ul class="ticks">
-        <li><strong>Productivity Through Quality</strong> — the mantra behind everything we do.</li>
-        <li><strong>Strong communication</strong> — approachable, easy to talk to, minimal jargon.</li>
-        <li><strong>Passion delivers value</strong> — always looking for new ways to apply technology.</li>
-      </ul>
-    </div>
-    <figure class="badge"><img src="img/iso-badges.png" alt="ASCB accreditation and ISO 9001 Approved Company badge from QMS Certification Services"><figcaption>ISO 9001 Quality Management Systems</figcaption></figure>
-  </div>
+  <p class="small">Partner brand shown on Wyvern’s product pages: <strong>RPI</strong> (rotary products).</p>
 </section>
 
 <section class="rental wrap" id="rental">
@@ -94,6 +134,11 @@
   </div>
 </section>
 
+<section class="iso wrap">
+  <img src="img/iso-badges.png" alt="ASCB accreditation and ISO 9001 Approved Company badge from QMS Certification Services">
+  <p><strong>ISO 9001 Quality Management Systems.</strong> Productivity Through Quality — the mantra behind everything we do.</p>
+</section>
+
 <section class="placeholder wrap" aria-label="Placeholder">
   <p class="ph-tag">PLACEHOLDER — content needed from Wyvern</p>
   <h2>Featured case study</h2>
@@ -101,6 +146,7 @@
 </section>
 
 <section class="cta" id="contact">
+  <img src="img/hero-2.jpg" alt="" loading="lazy">
   <div class="wrap cta-inner">
     <div><h2>We want to hear how we can help you.</h2><p>Get in touch today and let’s talk!</p></div>
     <div class="actions"><a class="btn" href="mailto:hello@wyvernamerica.com">hello@wyvernamerica.com</a><a class="btn btn-ghost" href="tel:+14042872296">(404) 287-2296</a></div>
